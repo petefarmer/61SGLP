@@ -84,8 +84,8 @@ e'16\4 d'\4 b8\5
  \bendOff
 b'\2 fis''\1 e''\1 b'\2 \glissando cis''\2 \ottava #+1 a'' fis'' b''8  \glissando 
 \times 2/3 {a''\1 fis''\1 e''\2}
-\times 2/3 {c''\2 a''\1 \glissando g''\1}
-\times 2/3 {e''\2 c''\2 b'\3}
+\times 2/3 {cis''\2 a''\1 \glissando g''\1}
+\times 2/3 {e''\2 cis''\2 b'\3}
 \times 2/3 {a'\3 fis'\4 e'\4}
 \ottava #0
 
@@ -112,8 +112,8 @@ b'\2 fis''\1 e''\1 b'\2 \glissando cis''\2 \ottava #+1 a'' fis'' b''8  \glissand
  \bendOff
 b'\2 fis''\1 e''\1 b'\2 \glissando cis''\2 \ottava #+1 a'' fis'' b''8  \glissando 
 \times 2/3 {a''\1 fis''\1 e''\2}
-\times 2/3 {c''\2 a''\1 \glissando g''\1}
-\times 2/3 {e''\2 c''\2 b'\3}
+\times 2/3 {cis''\2 a''\1 \glissando g''\1}
+\times 2/3 {e''\2 cis''\2 b'\3}
 \times 2/3 {a'\3 fis'\4 e'\4}
 \ottava #0
  cis'1\5 ~

@@ -2,38 +2,45 @@
 IntroDrums = { 
  \drummode {
  <<
-   {
-    \partial 8
-      s8
+   \new DrumVoice {
+    \stemDown
+    \partial 8 s8
+     bd4 s4  bd4 s4 
+     bd4 s4  bd4 s4 
+     bd4 s4  bd4 s4 
 
-    \repeat volta 2 
-    {
-     sn8 sn  sn sn  sn sn  sn sn
-     sn8 sn  sn sn  sn sn  sn sn
-    }
-     sn8 sn  sn sn  sn sn  sn sn
-     sn8 sn  sn sn  sn sn  sn sn
+     bd4 s4  bd4 s4
+     bd4 s4  bd4 s4
+     bd4 s4  bd4 s4
    }
-   \\
-   {
-    \partial 8
-     s8
+   \new DrumVoice {
+    \stemUp
+    \partial 16*2 tomfl16 tomfl 
+    s8 tomfh  tomfh tomfh  s8 tomfh  tomfh tomfh
+    s8 tomfh  tomfh tomfh  s8 tomfh  tomfh tomfh
+    s8 tomfh  tomfh tomfh  s8 tomfh  tomfh tomfh
 
-    \repeat volta 2 
-    {
-     bd4 bd bd bd
-     bd4 bd bd bd
-     % ^\markup  {\teeny "Fig. one intro"} 
-    }
-     bd4 bd bd bd
-     bd4 bd bd bd
+    s8 tomfh  tomfh tomfh  s8 tomfh  tomfh tomfh
+    s8 tomfh  tomfh tomfh  s8 tomfh  tomfh tomfh
+    s8 tomfh  tomfh tomfh  s8 tomfh  tomfh tomfh
    }
  >>
 
-  sn8 sn sn sn
-  sn8 sn sn sn
-  sn8 sn sn sn
-  sn8 sn sn sn
-
+ <<
+ \new DrumVoice {
+ \stemDown
+  sn8 sn sn s
+  sn8 sn s sn
+  sn8 s sn sn
+  s sn sn sn
+  }
+ \new DrumVoice {
+ \stemUp
+  s8 s8 s8 cymca
+  s8 s8 cymca s8
+  s8 cymca s8 s8
+  cymca s8 s8 s8
+ }
+ >>
  } % drummode
 }

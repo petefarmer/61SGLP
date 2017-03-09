@@ -1,4 +1,4 @@
-\version "2.18.0" % absolutely necessary!
+\version "2.16.2" % absolutely necessary!
 \header {
 snippet-title = "Guitar string bending notation"
 snippet-author = "Marc Hohl"
@@ -19,11 +19,11 @@ status = "buggy"
 % - enable consecutive bend ups
 % - simplify \preBend and \holdBend usage
 % - ...
-%#(display "\nbend.ly ─ 2011-03-11 (revised: 2013-07-16)\n\n")
+#(display "\nbend.ly ─ 2011-03-11 (revised: 2013-07-16)\n\n")
 %%% sizes and values (to be changed/adapted):
 #(define bend-line-thickness 0.1)
 #(define bend-arrow-curvature-factor 0.35)
-#(define y-distance-from-tabstaff-to-arrow-tip 2.75)
+%#(define y-distance-from-tabstaff-to-arrow-tip 2.75)
 #(define consecutive-bends-arrow-height 2.75)
 #(define bend-arrowhead-height 1.25)
 #(define bend-arrowhead-width 0.8)
@@ -361,53 +361,43 @@ begin-x end-x line-y)
 bendOn =
 #(define-music-function (parser location note) (ly:music?)
 #{
-\override Voice.Slur.stencil = #slur::draw-pointed-slur
-\override TabVoice.Slur.stencil = #slur::draw-bend-arrow
+\override Voice.Slur #'stencil = #slur::draw-pointed-slur
+%\override TabVoice.Slur #'stencil = #slur::draw-bend-arrow
 $note \noBreak
 #})
 bendOff = {
-\revert Voice.Slur.stencil
-\override TabVoice.Slur.stencil = #slur::draw-tab-slur
+\revert Voice.Slur #'stencil
+%\override TabVoice.Slur #'stencil = #slur::draw-tab-slur
 }
 bendGrace =
 #(define-music-function (parser location note) (ly:music?)
 #{
-\once \override Voice.Stem.stencil = #point-stencil
-\once \override Voice.Flag.stencil = ##f
-\once \override Voice.Stem.direction = #DOWN
-\once \override Voice.Slur.direction = #UP
+\once \override Voice.Stem #'stencil = #point-stencil
+\once \override Voice.Flag #'stencil = ##f
+\once \override Voice.Stem #'direction = #DOWN
+\once \override Voice.Slur #'direction = #UP
 \grace #note
 #})
 preBendHold =
 #(define-music-function (parser location note) (ly:music?)
 #{
-\once \override TabVoice.Slur.stencil = #slur::draw-pre-bend-only
-\once \override TabStaff.ParenthesesItem.transparent = ##t
+%\once \override TabVoice.Slur #'stencil = #slur::draw-pre-bend-only
+%\once \override TabStaff.ParenthesesItem #'transparent = ##t
 <>\noBeam \parenthesize #note
 #})
 preBendRelease =
 #(define-music-function (parser location note) (ly:music?)
 #{
-\once \override TabVoice.Slur.stencil = #slur::draw-pre-bend-hold
-\once \override TabStaff.ParenthesesItem.transparent = ##t
-\once \override Voice.Slur.direction = #DOWN
+%\once \override TabVoice.Slur #'stencil = #slur::draw-pre-bend-hold
+%\once \override TabStaff.ParenthesesItem #'transparent = ##t
+\once \override Voice.Slur #'direction = #DOWN
 <>\noBeam \parenthesize #note
 #})
 holdBend =
 #(define-music-function (parser location) ()
 #{
-\once \override TabVoice.Tie.stencil = #tie::draw-hold-bend
+%\once \override TabVoice.Tie #'stencil = #tie::draw-hold-bend
 #})
 shiftBend = {
-\once \override TabVoice.Slur.stencil = #slur::draw-shifted-bend-arrow
-
-% uncomment for \TabBook QT_BendDef.ily or change for TabStaff/Font size change
-%\once \override TabVoice.Slur.Y-offset = #-.3
+%\once \override TabVoice.Slur #'stencil = #slur::draw-shifted-bend-arrow
 }
-
-%{
-convert-ly (GNU LilyPond) 2.18.2  convert-ly: Processing `'...
-Applying conversion: 2.17.0, 2.17.4, 2.17.5, 2.17.6, 2.17.11, 2.17.14,
-2.17.15, 2.17.18, 2.17.19, 2.17.20, 2.17.25, 2.17.27, 2.17.29,
-2.17.97, 2.18.0
-%}

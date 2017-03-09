@@ -1,6 +1,7 @@
 % '61 SGLP
 \version "2.18.0"
-\include "definitions.ily" % one-pass complier, needs to be first
+%\include "definitions.ily" % one-pass complier, needs to be first
+\include "definitions_No-Tab.ly" % one-pass complier, needs to be first
 \include "IntroGuitar.ly"
 \include "IntroGuitarTab.ly"
 \include "IntroBass.ly"
@@ -36,6 +37,7 @@
 \new StaffGroup <<
  \new Staff {
   \set Staff.instrumentName = #"Guitar" 
+  \clef "treble_8"
   \time 4/4 
   \key e \minor
   \tempo 4 = 160 |
@@ -44,13 +46,13 @@
   \IntroGuitar
   \repeat volta 2 {
    \SectionAGuitar
+   \SectionBGuitar
   }
-  \SectionBGuitar
 
   \SoloGuitar
   \CodaGuitar
   } % Staff
-
+%{
   \new TabStaff {
 %  \tabFullNotation
   \hideSplitTiedTabNotes
@@ -62,6 +64,10 @@
   \SoloGuitarTab
   \CodaGuitarTab
  }
+%}
+
+
+%{
  \new Staff {
   \set Staff.instrumentName = #"Bass" 
   \clef "bass"
@@ -86,6 +92,7 @@
    \CodaDrums
   }
  }
+%}
  >> % StaffGroup
  \layout {
   \context {
@@ -96,6 +103,6 @@
   }
   \context { \TabStaff \remove Clef_engraver }
  }
-%\midi {}
+\midi {}
 } % score
 } % book
