@@ -27,7 +27,7 @@
  \header {
   title = "'61 SGLP"
   subtitle = "DRAFT"
-  subsubtitle = "v0.4"
+  subsubtitle = "v0.5"
   composer = "John Jorgenson"
   copyright = \markup { \char ##x00A9 Copyright Jorgensongs 2014 }
  }
@@ -67,7 +67,7 @@
 %}
 
 
-%{
+
  \new Staff {
   \set Staff.instrumentName = #"Bass" 
   \clef "bass"
@@ -75,11 +75,13 @@
   \IntroBass
   \repeat volta 2 {
    \SectionABass
+   \SectionBBass
   }
-  \SectionBBass
   \SoloBass
-  \CodaBass
+%  \CodaBass
  }
+%{
+
  \new DrumStaff {
   \set Staff.instrumentName = #"Drums" 
   \new DrumVoice {

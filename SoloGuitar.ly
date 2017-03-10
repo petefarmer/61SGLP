@@ -33,26 +33,26 @@ SoloGuitar = {
 
  <b' g'>8 ~ <b' g'>4  
  <b' g'>8 ~ <b' g'>8   
- <b' g'>8 ~ <b' g'>8 
+ <b' g'>8   <b' g'>8 
  e'16 d' b8
 
  <b' g'>8 e'16 d' b8
- <b' g'>8 \times 2/3 {a'16 g' e'} d'8 g4 ~ 
+ <b' g'>8 \times 2/3 {a'16 g' e'} d'8 g4\prall ~ 
   g8 e8 g a b d' g' a' ~
 
  a'4 
  b'8 d'' e'' g''
- \ottava #+1
+% \ottava #+1
  b''16 a'' g'' b''  a'' g'' e'' d''
  a''16 g'' e'' d''  a'' g'' e'' d''
- e'' d'' b'' a''  b'' a'' g'' e''
- a'' g'' e'' d'' 
- a'' g'' a'' g'' 
- a'' g'' e'' d'' 
+ e'' d'' b' a'  b' a' g' e'
+ a' g' e' d' 
+ a' g' a' g' 
+ a' g' e' d' 
 
- b'4
- \ottava #0
- r4. b'4 <b' d''>8 ~
+ b4\prall
+% \ottava #0
+ r4. b4 <b' d''>8 ~
  <b' d''> <b' d''> ~
  <b' d''> <b' d''>
  r2
@@ -84,12 +84,11 @@ SoloGuitar = {
  a' (g')
  \bendOff
  e' a' \glissando 
-b' fis'' e'' b' \glissando cis'' \ottava #+1 a'' fis'' b''8  \glissando 
+b' fis'' e'' b' \glissando cis'' a'' fis'' b''8  \glissando 
 \times 2/3 {a'' fis'' e''}
 \times 2/3 {cis'' a'' \glissando g''}
 \times 2/3 {e'' cis'' b'}
 \times 2/3 {a' fis' e'}
-\ottava #0
 
 
  \grace e'8 \glissando g'8 g' d'' g' 
@@ -112,12 +111,11 @@ b' fis'' e'' b' \glissando cis'' \ottava #+1 a'' fis'' b''8  \glissando
  a' (g')
  \bendOff
  e' a' \glissando 
-b' fis'' e'' b' \glissando cis'' \ottava #+1 a'' fis'' b''8  \glissando 
+b' fis'' e'' b' \glissando cis'' a'' fis'' b''8  \glissando 
 \times 2/3 {a'' fis'' e''}
 \times 2/3 {cis'' a'' \glissando g''}
 \times 2/3 {e'' cis'' b'}
 \times 2/3 {a' fis' e'}
-\ottava #0
  cis'1 ~
  % one measure drum fill
  cis'1

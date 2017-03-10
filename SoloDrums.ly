@@ -1,45 +1,48 @@
-SoloBass = {
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
+SoloDrums = {
+ \drummode {
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
 
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
 
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
 
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
 
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
 
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
 
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
 
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
 
-  a,8 a a a  a a a a
-  a,8 a a a  a a a a
+  <sn hh>4 <bd [hh]> sn hh
+  <sn hh>4 <bd [hh]> sn hh
+
+ } %drummode
 }
 
