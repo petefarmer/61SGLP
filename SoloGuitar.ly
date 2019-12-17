@@ -50,7 +50,7 @@ SoloGuitar = {
  a' g' a' g' 
  a' g' e' d' 
 
- b4\prall
+ \grace a \glissando b4\prall
 % \ottava #0
  r4. b4 <b' d''>8 ~
  <b' d''> <b' d''> ~

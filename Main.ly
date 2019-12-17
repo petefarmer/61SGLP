@@ -35,6 +35,8 @@
 \score {
 %\unfoldRepeats
 \new StaffGroup <<
+
+
  \new Staff {
   \set Staff.instrumentName = #"Guitar" 
   \clef "treble_8"
@@ -53,6 +55,9 @@
   \CodaGuitar
   } % Staff
 
+
+
+
   \new TabStaff {
 %  \tabFullNotation
   \hideSplitTiedTabNotes
@@ -67,22 +72,29 @@
  }
 
 
-%{
+
+
+
+{
 
  \new Staff {
   \set Staff.instrumentName = #"Bass" 
   \clef "bass"
   \key e \minor
+  \tempo 4=160
   \IntroBass
   \repeat volta 2 {
    \SectionABass
    \SectionBBass
   }
   \SoloBass
+%  \repeat unfold 2 {\SectionBBass}
 %  \CodaBass
  }
 
-%}
+} % Bass staff
+
+
 
 %{
 
