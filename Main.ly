@@ -1,7 +1,7 @@
 % '61 SGLP
 \version "2.18.0"
-%\include "definitions.ily" % one-pass complier, needs to be first
-\include "definitions_No-Tab.ly" % one-pass complier, needs to be first
+\include "definitions.ily" % one-pass complier, needs to be first
+%\include "definitions_No-Tab.ly" % one-pass complier, needs to be first
 \include "IntroGuitar.ly"
 \include "IntroGuitarTab.ly"
 \include "IntroBass.ly"
@@ -52,7 +52,7 @@
   \SoloGuitar
   \CodaGuitar
   } % Staff
-%{
+
   \new TabStaff {
 %  \tabFullNotation
   \hideSplitTiedTabNotes
@@ -60,13 +60,14 @@
   \repeat volta 2 {
    \SectionAGuitarTab
   }
-  \SectionBGuitarTab
+     \SectionBGuitarTab
+
   \SoloGuitarTab
-  \CodaGuitarTab
+%  \CodaGuitarTab
  }
-%}
 
 
+%{
 
  \new Staff {
   \set Staff.instrumentName = #"Bass" 
@@ -80,6 +81,9 @@
   \SoloBass
 %  \CodaBass
  }
+
+%}
+
 %{
 
  \new DrumStaff {
