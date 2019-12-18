@@ -3,4 +3,4 @@
 
 From the John Jorgenson album Gifts From The Flood.
 
-[embed]https://github.com/petefarmer/61SGLP/blob/master/Main.pdf[/embed]
+<p> <a href="https://github.com/petefarmer/61SGLP/blob/master/Main.pdf">View PDF</a> </p>
