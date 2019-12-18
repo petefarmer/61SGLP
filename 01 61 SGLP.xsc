@@ -2,7 +2,7 @@ Transcribe! for Macintosh document. Version 6089.00
 Transcribe!,Macintosh OS-X,8,73,7,S,1
 
 SectionStart,Main
-SaveDate,2019-12-17 12:27
+SaveDate,2019-12-18 13:30
 SoundFileName,01 61 SGLP.m4a,MacOSX,/Users/p/Music/iTunes/iTunes Media/Music/John Jorgenson/Gifts From The Flood/01 61 SGLP.m4a
 SoundFileInfo,AVFoundation soundfile,Extn:'m4a' Subtype:'aac ',2,9265404,44100,11916996,270.226667
 Loops,0:0,0:0,0:0,0:0,0:0,0:0,0:0,0:0,0:0,0:0
@@ -17,7 +17,7 @@ FX_Mix,0,0,100,0
 FX_Tuning,1,1,0,0,0,0,60,50,0
 FX_Transposition,1,1,0,0,0
 FX_EQ,1,0,0,0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0
-FX_Speed,1,0,100000,0
+FX_Speed,1,0,79000,0
 FX_Misc,1,0,50,0
 ShowTextZone,0
 ShowPianoRoll,0
@@ -52,9 +52,9 @@ PianoRollSplitterPos,0.500000
 ViewSplitterPos,0.700000
 VertProfileZoom,1.000000
 HorizProfileZoom,0.250000
-HorizProfilePos,3841
-SelectionLeft,2446338
-SelectionRight,2446338
+HorizProfilePos,5324
+SelectionLeft,5854154
+SelectionRight,7087985
 SectionEnd,View0
 
 SectionStart,Markers

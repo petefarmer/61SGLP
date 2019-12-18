@@ -64,7 +64,10 @@ SoloGuitar = {
  cis'' g' b' g' 
 
  \bendOn
- a' \bendGrace g' (a') a' \bendGrace g' (a') ~
+ % adding \slurUp to this measure causes the CodaGuitar.ly file to throw errors on the time sig changes -- weirdly fucks
+ % beat calculation -------
+% a'  \bendGrace \slurUp g' (a') a' \bendGrace \slurUp g' (a') ~
+a' \bendGrace  g' ^(a') a' \bendGrace  g' ^(a') ~
  a' (g') e'4
  \bendOff
 
@@ -73,14 +76,14 @@ SoloGuitar = {
  \grace e'8 \glissando g' g' d'' g' 
  cis'' g' b' g' 
  \bendOn
- a' \bendGrace g' (a') a' \bendGrace g' (a') ~
+ a' \bendGrace g' ^(a') a' \bendGrace g' ^(a') ~
  <a' a'>2 \prallprall
  \bendOff
 
  \grace e'8 \glissando g' g' d'' g' 
  cis'' g' b' g' 
  \bendOn
- a' \bendGrace g' (a') a' \bendGrace g' (a') ~
+ a' \bendGrace g' ^(a') a' \bendGrace g' ^(a') ~
  a' (g')
  \bendOff
  e' a' \glissando 
@@ -94,20 +97,20 @@ b' fis'' e'' b' \glissando cis'' a'' fis'' b''8  \glissando
  \grace e'8 \glissando g'8 g' d'' g' 
  cis'' g' b' g' 
  \bendOn
- a' \bendGrace g' (a') a' \bendGrace g' (a') ~
+ a' \bendGrace g' ^(a') a' \bendGrace g' ^(a') ~
  a' (g') e'4
  \bendOff
  \grace e'8 \glissando g' g' d'' g' 
  cis'' g' b' g' 
  \bendOn
- a' \bendGrace g' (a') a' \bendGrace g' (a') ~
+ a' \bendGrace g' ^(a') a' \bendGrace g' ^(a') ~
  \bendOff
  <a' a'>2 \prallprall
 
  \grace e'8 \glissando g' g' d'' g' 
  cis'' g' b' g' 
  \bendOn
- a' \bendGrace g' (a') a' \bendGrace g' (a') ~
+ a' \bendGrace g' ^(a') a' \bendGrace g' ^(a') ~
  a' (g')
  \bendOff
  e' a' \glissando 

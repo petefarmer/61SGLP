@@ -9,8 +9,8 @@ IntroBass = {
  \grace a \glissando b b  b b b b  b a ~
  a b  b b  \autoBeamOff b[ b] b \glissando \hideNotes g \unHideNotes \autoBeamOn
    
- b,8 e fis b 
- e fis  a d
- e g  a, b,
+ b,8 e (fis) b 
+ e (fis)  a d
+ (e) g  a, (b,)
  d g,4. %\accent
 }

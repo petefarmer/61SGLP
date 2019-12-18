@@ -27,15 +27,14 @@
  \header {
   title = "'61 SGLP"
   subtitle = "DRAFT"
-  subsubtitle = "v0.5"
+  subsubtitle = "v0.6"
   composer = "John Jorgenson"
-  copyright = \markup { \char ##x00A9 Copyright Jorgensongs 2014 }
+  copyright = \markup { \char ##x00A9 Copyright Jorgensongs 2014 } 
  }
 
 \score {
 %\unfoldRepeats
 \new StaffGroup <<
-
 
  \new Staff {
   \set Staff.instrumentName = #"Guitar" 
